@@ -32,8 +32,12 @@ cd projeto-loja-virtual-backend Instale as dependências:
   ```bash
 
   ```
-4. npm install
+3. npm instal
+
+```
 Inicie o servidor de desenvolvimento:
+
+  ```
 
   ```bash
 
