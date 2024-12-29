@@ -44,31 +44,27 @@ src/
 ├── config/
 │   ├── database.js
 ├── controllers/
-│   ├── authController.js
 │   ├── categoryController.js
+│   ├── productCategoryController.js
 │   ├── productController.js
 │   ├── productImageController.js
 │   ├── productOptionController.js
-│   ├── orderController.js
 │   └── userController.js
 ├── middleware/
-│   ├── authMiddleware.js
-│   └── errorMiddleware.js
 ├── models/
-│   ├── Category.js
-│   ├── Product.js
-│   ├── ProductImage.js
-│   ├── ProductOption.js
-│   ├── User.js
-│   └── Order.js
+│   ├── category.js
+│   ├── productCategory.js
+│   ├── product.js
+│   ├── productImage.js
+│   ├── productOption.js
+│   └── user.js
 ├── routes/
-│   ├── authRoutes.js
-│   ├── categoryRoutes.js
-│   ├── productRoutes.js
-│   ├── productImageRoutes.js
-│   ├── productOptionRoutes.js
-│   ├── orderRoutes.js
-│   └── userRoutes.js
+│   ├── categories.js
+│   ├── products.js
+│   ├── productCategories.js
+│   ├── productImages.js
+│   ├── productOptions.js
+│   └── users.js
 ├── public/
 │   ├── images/
 │       ├── products/
