@@ -1,8 +1,8 @@
-🛒| Digital Story - Backend
+## 🛒| Digital Story - Backend
 
 Bem-vindo ao repositório do backend da Digital Story! Este é um projeto de e-commerce desenvolvido com Node.js, Express, MongoDB e outras tecnologias modernas para oferecer uma experiência de compra online robusta e eficiente, colocando em prática todo conhecimento adquirido no Projeto GeraçãoTech 3.
 
-🚀| Tecnologias Utilizadas
+## 🚀| Tecnologias Utilizadas
 - Node.js - Ambiente de execução JavaScript server-side.
 - Express - Framework web para Node.js.
 - MongoDB - Banco de dados NoSQL.
@@ -11,7 +11,7 @@ Bem-vindo ao repositório do backend da Digital Story! Este é um projeto de e-c
 - bcrypt - Biblioteca para hashing de senhas.
 - dotenv - Carrega variáveis de ambiente de um arquivo .env.
 
-📦| Instalação
+## 📦| Instalação
 Para rodar o projeto localmente, siga os passos abaixo:
 
 Clone o repositório para a sua máquina:
