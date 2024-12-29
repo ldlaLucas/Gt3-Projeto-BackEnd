@@ -1,4 +1,4 @@
-## 🛒| Digital Story - Backend
+## 🛒| Digital Story - Back-end
 
 Bem-vindo ao repositório do backend da Digital Story! Este é um projeto de e-commerce desenvolvido com Node.js, Express, MongoDB e outras tecnologias modernas para oferecer uma experiência de compra online robusta e eficiente, colocando em prática todo conhecimento adquirido no Projeto GeraçãoTech 3.
 
