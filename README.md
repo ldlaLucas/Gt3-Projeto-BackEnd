@@ -89,7 +89,7 @@ Middleware de Autenticação: Proteção de rotas com JWT.
 
 Hashing de Senhas: Segurança de senhas com bcrypt.
 
-## 📞| Contato: Se você tiver dúvidas ou sugestões, entre em contato:
+## 📲| Contato: Se você tiver dúvidas ou sugestões, entre em contato:
 
 E-mail: ldlaconcursos@gmail.com
 
