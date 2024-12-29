@@ -42,7 +42,7 @@ npm run dev. O servidor estará disponível em http://localhost:5000.
 ```
 ## 🗂️| Estrutura do Projeto A estrutura de pastas do projeto segue o modelo abaixo:
 
-
+```
 src/
 ├── controllers/
 │   ├── authController.js
