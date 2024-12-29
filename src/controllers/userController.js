@@ -1,9 +1,19 @@
 const User = require('../models/User');
+const bcrypt = require('bcrypt');
 
 // Cria um novo usuário
 exports.createUser = async (req, res) => {
+  const { firstname, surname, email, password, confirmPassword } = req.body;
+  
+  // Valida se as senhas correspondem
+  if (password !== confirmPassword) {
+    return res.status(400).json({ error: 'Passwords do not match' });
+  }
+
   try {
-    const user = await User.create(req.body);
+    // Hash da senha
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const user = await User.create({ firstname, surname, email, password: hashedPassword });
     res.status(201).json(user);  // Retorna 201 Created e o usuário criado
   } catch (error) {
     res.status(400).json({ error: error.message });  // Retorna 400 Bad Request em caso de erro
