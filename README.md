@@ -25,8 +25,7 @@ git clone https://github.com/ldlaLucas/Projeto-Digital-Store-Backend.git
 
   ```bash
 
-3. cd projeto-loja-virtual-backend
-Instale as dependências:
+3. cd projeto-loja-virtual-backend Instale as dependências:
   ```
 
   ```bash
