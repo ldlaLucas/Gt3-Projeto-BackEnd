@@ -15,6 +15,9 @@ app.use('/api/products', require('./routes/products'));
 // Rotas de imagens de produtos
 app.use('/api/product-images', require('./routes/productImages'));
 
+// Rotas de opções de produtos
+app.use('/api/product-options', require('./routes/productOpitions'));
+
 app.get('/', (req, res) => {
   res.send('API está funcionando!');
 });
