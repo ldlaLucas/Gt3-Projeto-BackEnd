@@ -12,6 +12,9 @@ app.use('/api/categories', require('./routes/categories'));
 // Rotas de produtos
 app.use('/api/products', require('./routes/products'));
 
+// Rotas de imagens de produtos
+app.use('/api/product-images', require('./routes/productImages'));
+
 app.get('/', (req, res) => {
   res.send('API está funcionando!');
 });
