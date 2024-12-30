@@ -1,12 +1,23 @@
 const express = require('express');
 const router = express.Router();
-const CategoryController = require('../controllers/categoryController');
+const categoryController = require('../controllers/categoryController');
 
-// Rotas CRUD para categorias
-router.post('/', CategoryController.createCategory);
-router.get('/', CategoryController.getAllCategories);
-router.get('/:id', CategoryController.getCategoryById);
-router.put('/:id', CategoryController.updateCategory);
-router.delete('/:id', CategoryController.deleteCategory);
+// Rota para obter uma lista de categorias
+router.get('/search', categoryController.getCategories);
+
+// Rota para obter todas as categorias
+router.get('/', categoryController.getAllCategories);
+
+// Rota para obter uma categoria por ID
+router.get('/:id', categoryController.getCategoryById);
+
+// Rota para criar uma nova categoria
+router.post('/', categoryController.createCategory);
+
+// Rota para atualizar uma categoria por ID
+router.put('/:id', categoryController.updateCategory);
+
+// Rota para excluir uma categoria por ID
+router.delete('/:id', categoryController.deleteCategory);
 
 module.exports = router;

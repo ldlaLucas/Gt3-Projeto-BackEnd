@@ -1,27 +1,26 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-// Definição do modelo de categoria
 const Category = sequelize.define('Category', {
   id: {
     type: DataTypes.INTEGER,
-    autoIncrement: true,  // O ID será incrementado automaticamente
-    primaryKey: true,     // Define a chave primária
+    autoIncrement: true,
+    primaryKey: true,
   },
-  nome: {
+  name: {
     type: DataTypes.STRING,
-    allowNull: false,     // O campo é obrigatório
+    allowNull: false,
   },
   slug: {
     type: DataTypes.STRING,
-    allowNull: false,     // O campo é obrigatório
+    allowNull: false,
   },
   use_in_menu: {
     type: DataTypes.BOOLEAN,
-    defaultValue: false,  // Valor padrão é 0 (falso)
+    defaultValue: false,
   },
 }, {
-  timestamps: true,       // Adiciona created_at e updated_at automaticamente
+  timestamps: true,
 });
 
 module.exports = Category;
