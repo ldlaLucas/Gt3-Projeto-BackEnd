@@ -50,8 +50,9 @@ exports.updateUser = async (req, res) => {
     if (!user) {
       return res.status(404).json({ error: 'User not found' });  // Retorna 404 Not Found se o usuário não for encontrado
     }
-    await user.update(req.body);
-    res.status(200).json(user);  // Retorna 200 OK e os dados do usuário atualizado
+    const { firstname, surname, email } = req.body;
+    await user.update({ firstname, surname, email });
+    res.status(204).send();  // Retorna 204 No Content após atualização bem-sucedida
   } catch (error) {
     res.status(400).json({ error: error.message });  // Retorna 400 Bad Request em caso de erro
   }

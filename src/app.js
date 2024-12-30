@@ -3,6 +3,9 @@ const app = express();
 
 app.use(express.json()); // Middleware para analisar JSON
 
+// Rotas de autenticação
+app.use('/api/auth', require('./routes/auth'));
+
 // Rotas de usuários
 app.use('/api/users', require('./routes/users'));
 
