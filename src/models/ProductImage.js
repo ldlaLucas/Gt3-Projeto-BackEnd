@@ -23,6 +23,8 @@ const ProductImage = sequelize.define('ProductImage', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+}, {
+  timestamps: true,
 });
 
 module.exports = ProductImage;

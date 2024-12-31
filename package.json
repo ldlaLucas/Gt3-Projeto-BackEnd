@@ -1,7 +1,27 @@
 {
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.12.0",
-    "sequelize": "^6.37.5"
-  }
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
+  },
+  "name": "gt3-projeto-backend",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao repositório do backend da Digital Story! Este é um projeto de e-commerce desenvolvido com Node.js, Express, Sequelize e outras tecnologias modernas para oferecer uma experiência de compra online robusta e eficiente, colocando em prática todo conhecimento adquirido no Projeto GeraçãoTech 3.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
