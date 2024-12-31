@@ -50,3 +50,14 @@ exports.deleteUser = async (req, res) => {
     res.status(500).json({ message: 'Server error', error });
   }
 };
+
+exports.getUsers = async (req, res) => {
+  try {
+    const users = await User.findAll({
+      attributes: ['id', 'firstname', 'surname', 'email'] // Não incluir a senha
+    });
+    res.status(200).json(users);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+};
